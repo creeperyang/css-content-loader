@@ -1,0 +1,27 @@
+{
+  "name": "css-content-loader",
+  "version": "1.0.0",
+  "description": "CSS content loader for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creeperyang/css-content-loader.git"
+  },
+  "keywords": [
+    "css",
+    "loader",
+    "style",
+    "webpack-loader",
+    "webpack",
+    "raw"
+  ],
+  "author": "creeperyang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creeperyang/css-content-loader/issues"
+  },
+  "homepage": "https://github.com/creeperyang/css-content-loader#readme"
+}
