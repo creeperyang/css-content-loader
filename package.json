@@ -4,7 +4,7 @@
   "description": "CSS content loader for webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/creeperyang/css-content-loader/issues"
   },
-  "homepage": "https://github.com/creeperyang/css-content-loader#readme"
+  "homepage": "https://github.com/creeperyang/css-content-loader#readme",
+  "devDependencies": {
+    "loader-runner": "^2.1.1",
+    "mocha": "^2.4.5",
+    "should": "^8.3.0"
+  }
 }
