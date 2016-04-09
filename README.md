@@ -7,9 +7,9 @@
 [![Dependency Status](https://david-dm.org/creeperyang/css-content-loader.svg)](https://david-dm.org/creeperyang/css-content-loader)
 [![devDependency Status](https://david-dm.org/creeperyang/css-content-loader/dev-status.svg)](https://david-dm.org/creeperyang/css-content-loader#info=devDependencies)
 
-*Why this loader?* We use `style-loader` as the last loader for style files and it will insert a `<style>` or `<link>` tag into the html doc. In most cases, it's enough and works perfectly.
+**Why this loader?** We use `style-loader` as the last loader for style files and it will insert a `<style>` or `<link>` tag into the html doc. In most cases, it's enough and works perfectly.
 
-However, what if we just want to **get the style content as string** directly! Like I just want `require` the style content in code and process the string. This loader is for this corner case.
+However, what if we just want to **get the style content as string** directly? Sometimes I just want `require` the style content in code and process the string. This loader is for the *corner case*.
 
 ## Install
 
@@ -37,7 +37,7 @@ Currently no special config is needed for `css-content-loader`. It works well wi
 module.exports = {
     module: {
         loaders: [
-            { test: /\.css$/, loader: "content-loader!css-loader" },
+            { test: /\.css$/, loader: "css-content-loader!css-loader" },
             { test: /\.png$/, loader: "url-loader?limit=100000" },
             { test: /\.jpg$/, loader: "file-loader" }
         ]
