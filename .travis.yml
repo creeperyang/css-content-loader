@@ -3,7 +3,7 @@ node_js:
   - "5.7"
   - "4.4"
   - "0.12"
-script: npm run travis
+script: npm run cover
 matrix:
   allow_failures:
     - node_js: "5.7" # for node-sass error
@@ -13,5 +13,4 @@ before_script:
 
 after_success:
   - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls --verbose
-  - cat ./coverage/coverage.json | ./node_modules/codecov.io/bin/codecov.io.js
   - rm -rf ./coverage

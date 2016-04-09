@@ -7,8 +7,7 @@
     "test": "./node_modules/.bin/mocha -t 10000",
     "lint": "./node_modules/.bin/eslint test index.js",
     "precover": "npm run lint",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -t 10000",
-    "travis": "npm run cover -- --report lcovonly"
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -t 10000"
   },
   "repository": {
     "type": "git",
