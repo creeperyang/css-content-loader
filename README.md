@@ -2,9 +2,13 @@
 
 > CSS content loader for webpack
 
-Why this loader?
+[![Build Status](https://travis-ci.org/creeperyang/css-content-loader.svg?branch=master)](https://travis-ci.org/creeperyang/css-content-loader)
+[![Dependency Status](https://david-dm.org/creeperyang/css-content-loader.svg)](https://david-dm.org/creeperyang/css-content-loader)
+[![devDependency Status](https://david-dm.org/creeperyang/css-content-loader/dev-status.svg)](https://david-dm.org/creeperyang/css-content-loader#info=devDependencies)
 
-We use `style-loader` as the last loader for style files and insert a `<style>` or `<link>` tag into the html doc. In most cases, it's enough and works perfectly. However, sometimes we just want to get the style content **as string** directly! This loader is for the corner case.
+*Why this loader?* We use `style-loader` as the last loader for style files and it will insert a `<style>` or `<link>` tag into the html doc. In most cases, it's enough and works perfectly.
+
+However, what if we just want to **get the style content as string** directly! Like I just want `require` the style content in code and process the string. This loader is for this corner case.
 
 ## Usage
 
@@ -13,6 +17,7 @@ We use `style-loader` as the last loader for style files and insert a `<style>` 
 ```js
 var cssContent = require('css-content!./file.css');
 // => returns css code as string from file.css
+// cssContent is string like `body { margin: 0; }`
 
 var cssContent2 = require('css-content!css!postcss!sass!./file.scss');
 // recommend to use with css-loader and other style loaders.
