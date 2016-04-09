@@ -3,12 +3,17 @@
 > CSS content loader for webpack
 
 [![Build Status](https://travis-ci.org/creeperyang/css-content-loader.svg?branch=master)](https://travis-ci.org/creeperyang/css-content-loader)
+[![Coverage Status](https://coveralls.io/repos/github/creeperyang/css-content-loader/badge.svg?branch=master)](https://coveralls.io/github/creeperyang/css-content-loader?branch=master)
 [![Dependency Status](https://david-dm.org/creeperyang/css-content-loader.svg)](https://david-dm.org/creeperyang/css-content-loader)
 [![devDependency Status](https://david-dm.org/creeperyang/css-content-loader/dev-status.svg)](https://david-dm.org/creeperyang/css-content-loader#info=devDependencies)
 
 *Why this loader?* We use `style-loader` as the last loader for style files and it will insert a `<style>` or `<link>` tag into the html doc. In most cases, it's enough and works perfectly.
 
 However, what if we just want to **get the style content as string** directly! Like I just want `require` the style content in code and process the string. This loader is for this corner case.
+
+## Install
+
+[![NPM](https://nodei.co/npm/css-content-loader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/css-content-loader/)
 
 ## Usage
 
