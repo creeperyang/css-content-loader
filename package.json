@@ -4,7 +4,8 @@
   "description": "CSS content loader for webpack",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha -t 10000"
+    "test": "./node_modules/.bin/mocha -t 10000",
+    "lint": "./node_modules/.bin/eslint test index.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "css-loader": "^0.23.1",
+    "eslint": "^2.7.0",
     "loader-runner": "^2.1.1",
     "mocha": "^2.4.5",
     "postcss-loader": "^0.8.2",

@@ -33,15 +33,15 @@ describe('css-content-loader', function() {
             resource: path.join(root, 'test/res/cssloader.css'),
             loaders: [path.join(root, 'index.js'), 'css-loader?minimize&modules&localIdentName=[name]__[local]___[hash:base64:5]'],
             context: {
-                exec: function (code, filename) {
-                    if(typeof __webpack_modules__ === "undefined") {
-                        var Module = require("module");
+                exec: function(code, filename) {
+                    if (typeof __webpack_modules__ === 'undefined') {
+                        var Module = require('module');
                         var m = new Module(filename, module);
                         m.filename = filename;
                         m._compile(code, filename);
                         return m.exports;
                     } else {
-                        throw new Error("loaderContext.exec is not supported");
+                        throw new Error('loaderContext.exec is not supported');
                     }
                 }
             },
@@ -66,15 +66,15 @@ describe('css-content-loader', function() {
                 'sass-loader?outputStyle=expanded'
             ],
             context: {
-                exec: function (code, filename) {
-                    if(typeof __webpack_modules__ === "undefined") {
-                        var Module = require("module");
+                exec: function(code, filename) {
+                    if (typeof __webpack_modules__ === 'undefined') {
+                        var Module = require('module');
                         var m = new Module(filename, module);
                         m.filename = filename;
                         m._compile(code, filename);
                         return m.exports;
                     } else {
-                        throw new Error("loaderContext.exec is not supported");
+                        throw new Error('loaderContext.exec is not supported');
                     }
                 },
                 // sass-loader and postcss-loader need this

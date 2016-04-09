@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(source) {
-	this.cacheable && this.cacheable();
+    this.cacheable && this.cacheable();
     var callback = this.async();
     var value = source.toString();
     if (/module\.exports\s*=\s*require\s*\(/.test(value)) {
